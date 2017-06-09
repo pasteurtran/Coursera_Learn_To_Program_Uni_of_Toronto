@@ -166,8 +166,7 @@ def read_words(words_file):
     """
     
     listofwords = []
-    file = open(words_file, "r")
-    for line in file:
+    for line in words_file:
         line = line.rstrip('\n')
         listofwords.append(line)
     return listofwords
@@ -181,8 +180,7 @@ def read_board(board_file):
     Remember a board is a LIST OF SINGLE LETTERS
     """
     board = []
-    file = open(board_file, "r")
-    for line in file:
+    for line in board_file:
         line = line.rstrip('\n')
         templist = []
         for char in line:
